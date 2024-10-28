@@ -54,20 +54,23 @@ section {
 
 /* Skills and Experience Styling */
 ul {
-    list-style: none;
+    list-style-type: none; /* Remove default bullets */
     padding: 0;
-    margin:0;
+    margin: 0;
 }
 
 ul li {
+    position: relative; /* Position for custom bullets */
+    padding-left: 1.5em; /* Space for bullet */
     margin: 8px 0;
-    padding-left: 1.5em;
+    text-indent: -1.5em; /* Align text with bullets */
 }
 
 ul li::before {
-    content: "•";
-    color: #2e3a87;
-    left: 0;
+    content: "•"; /* Custom bullet */
+    position: absolute; /* Position bullet */
+    left: 0; /* Align bullet to the left */
+    color: #2e3a87; /* Bullet color */
     font-weight: bold;
 }
 
